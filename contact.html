@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechOnly | Le matériel pro, sans prise de tête</title>
+    <meta name="description" content="Équipez votre entreprise en matériel fiable : PC, smartphones et tablettes. Devis sous 24h, tarifs volume et SAV dédié.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <nav class="navbar" id="mainNavbar">
+    <div class="nav-flex">
+        <a href="index.html" class="logo">TECH<span>ONLY</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="#categories" class="nav-link">Produits</a></li>
+            <li><a href="#b2b" class="nav-link">Solutions Pro</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li class="mobile-only-btn"><a href="contact.html" class="btn-contact">Contact</a></li>
+            <li class="mobile-only-btn"><a href="contact.html?type=devis" class="btn-devis">Devis</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="contact.html" class="btn-contact">Contact</a>
+            <a href="contact.html?type=devis" class="btn-devis">Devis 24h</a>
+        </div>
+
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <main class="contact-page">
+    <section class="section-contact">
+        <div class="container max-800 reveal">
+            <div class="contact-header">
+                <span class="badge-tech">Support & Devis</span>
+                <h1 class="section-title text-left">Parlons de votre <span class="gradient-text">projet</span></h1>
+                <p>Une question technique ou un besoin de flotte informatique ? Notre équipe vous répond sous 24h ouvrées.</p>
+            </div>
+
+            <div class="contact-card-premium">
+                <form id="contactForm" class="modern-form">
+                    <div style="display:none;">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email professionnel</label>
+                            <input type="email" id="email" name="email" required placeholder="jean@entreprise.com">
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                        </div>
+                        <div class="form-group">
+                            <label for="client_type">Type de client</label>
+                            <select id="client_type" name="client_type" required>
+                                <option value="B2B">Entreprise / Administration</option>
+                                <option value="B2C">Particulier</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-wrapper">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="is_quote" name="is_quote">
+                            <span class="checkmark"></span>
+                            Ceci est une demande de devis entreprise
+                        </label>
+                    </div>
+
+                    <div id="volume_field" class="form-group" style="display:none;">
+                        <label for="volume">Nombre d'unités estimé</label>
+                        <input type="number" id="volume" name="volume" min="1" placeholder="Ex: 15">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Ex: Demande de tarifs PC portables">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Détaillez votre besoin..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-main-pro btn-block">
+                        Envoyer ma demande <span class="arrow-icon">→</span>
+                    </button>
+                </form>
+                
+                <div id="successMessage" class="success-overlay" style="display:none;">
+                    <div class="success-content">
+                        <div class="success-icon">✓</div>
+                        <h3>Message envoyé !</h3>
+                        <p>Merci de votre confiance. Un expert TechOnly traite votre demande.</p>
+                        <button onclick="location.reload()" class="btn-secondary-tech">Nouvel envoi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+       <footer class="footer-premium">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-col brand">
+                <a href="#" class="logo">Tech<span>Only</span></a>
+                <p>Expert en équipement informatique haute performance pour les entreprises et les particuliers exigeants.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">LN</a>
+                    <a href="#" class="social-icon">X</a>
+                    <a href="#" class="social-icon">IG</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="#categories">Équipements</a></li>
+                    <li><a href="#packs">Packs Entreprises</a></li>
+                    <li><a href="#particuliers">Particuliers</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <p>Paris, France</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <p>pro@techonly.fr</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <p>01 23 45 67 89</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechOnly - Tous droits réservés.</p>
+            <div class="legal-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Politique de Confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
