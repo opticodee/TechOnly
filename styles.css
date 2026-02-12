@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
 /* --- 1. DESIGN SYSTEM & VARIABLES --- */
+/* --- 1. DESIGN SYSTEM & VARIABLES (VERSION HARDWARE) --- */
 :root {
-    --bg-dark: #05070a;
-    --bg-card: rgba(13, 17, 23, 0.8);
-    --primary: #2d6ade;
-    --primary-light: #4f86f7;
-    --accent: #00f2ff;
-    --text-main: #94a3b8;
-    --text-bright: #ffffff;
-    --border: rgba(255, 255, 255, 0.08);
-    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --bg-dark: #08080a;           /* Noir plus profond */
+    --bg-card: #121215;           /* Gris anthracite technique */
+    --primary: #00d2ff;           /* Cyan électrique style LED */
+    --primary-light: #00f2ff;
+    --accent: #7000ff;            /* Violet pour les touches RGB */
+    --text-main: #a1a1aa;
+    --text-bright: #f4f4f5;
+    --border: rgba(255, 255, 255, 0.05);
+    --radius-lg: 8px;             /* Angles plus fermés/pro */
+    --radius-md: 4px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -1660,4 +1663,5 @@ body {
     .mobile-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .mobile-toggle.active span:nth-child(2) { opacity: 0; }
     .mobile-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 }
